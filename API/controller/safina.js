@@ -2,6 +2,7 @@ const pariwisata = require(".../model/pariwisata");
 
 const pariwisata= (req, res) => {
     const pariwisata = new pariwisata({
+        nama : req.body.nama,
         Tempat :req.body.tempat,
         wisata : req.body.wisata
     });
